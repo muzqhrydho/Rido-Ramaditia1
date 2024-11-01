@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Manajemen Karyawan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-primary border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading text-white">
+                <img src="logo.png" alt="Logo" class="img-fluid">
+                <h4>Universitas Bung Karno</h4>
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-primary text-white">Dashboard</a>
+                <a href="#" class="list-group-item list-group-item-action bg-primary text-white">Karyawan</a>
+                <a href="#" class="list-group-item list-group-item-action bg-primary text-white">Jabatan</a>
+                <a href="#" class="list-group-item list-group-item-action bg-primary text-white">Divisi</a>
+                <a href="#" class="list-group-item list-group-item-action bg-primary text-white">Absensi</a>
+                <a href="#" class="list-group-item list-group-item-action bg-primary text-white">Izin</a>
+                <a href="#" class="list-group-item list-group-item-action bg-primary text-white">Lembur</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <span class="navbar-text">Welcome, Yovan Fiqri</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <h1 class="mt-4">Sistem Informasi Manajemen Karyawan</h1>
+                <p class="lead">Admin Dashboard</p>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card bg-light text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Data Pegawai</h5>
+                                <p class="card-text display-4">13</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card bg-success text-center text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Absensi Hari Ini</h5>
+                                <p class="card-text display-4">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card bg-primary text-center text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Izin Menunggu Konfirmasi</h5>
+                                <p class="card-text display-4">2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card bg-secondary text-center text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Lembur Menunggu Konfirmasi</h5>
+                                <p class="card-text display-4">1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+</html>
